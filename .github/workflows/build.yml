@@ -55,7 +55,7 @@ jobs:
         with:
           bundler-cache: true
           ruby-version: 2.7.4
-      - uses: dart-lang/setup-dart@v1.3
+      - uses: dart-lang/setup-dart@v1.4
         with:
           sdk: ${{ matrix.sdk }}
       - name: Install node dependencies
@@ -76,7 +76,7 @@ jobs:
 #    steps:
 #      - uses: actions/checkout@v2
 #      - run: mkdir -p $TMP
-#      - uses: dart-lang/setup-dart@v1.3
+#      - uses: dart-lang/setup-dart@v1.4
 #        with:
 #          sdk: stable
 #      - run: ./tool/check-diagnostics.sh
@@ -86,7 +86,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: mkdir -p $TMP
-      - uses: dart-lang/setup-dart@v1.3
+      - uses: dart-lang/setup-dart@v1.4
         with:
           sdk: stable
       - run: ./tool/firebase-checks.sh
@@ -111,7 +111,7 @@ jobs:
         with:
           bundler-cache: true
           ruby-version: 2.7.4
-      - uses: dart-lang/setup-dart@v1.3
+      - uses: dart-lang/setup-dart@v1.4
         with:
           sdk: stable
       - name: Install node dependencies
@@ -146,7 +146,7 @@ jobs:
         with:
           bundler-cache: true
           ruby-version: 2.7.4
-      - uses: dart-lang/setup-dart@v1.3
+      - uses: dart-lang/setup-dart@v1.4
         with:
           sdk: stable
       - name: Install node dependencies
